@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* - Common - */
+/* - Section - */
+/* - Form - */
+/* - footer - */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:300,600);
+.icon-social_fb {
+  background-image: url(/static/images/sprites/social_medsite.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px; }
+
+.icon-social_gplus {
+  background-image: url(/static/images/sprites/social_medsite.png);
+  background-position: -40px 0px;
+  width: 40px;
+  height: 40px; }
+
+.icon-social_linkedin {
+  background-image: url(/static/images/sprites/social_medsite.png);
+  background-position: 0px -40px;
+  width: 40px;
+  height: 40px; }
+
+.icon-social_twitter {
+  background-image: url(/static/images/sprites/social_medsite.png);
+  background-position: -40px -40px;
+  width: 40px;
+  height: 40px; }
+
+h4.icon-agenda:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -36px 0px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-calendar:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -72px -72px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-degree:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: 0px -36px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-description:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -36px -36px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-doctor:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -72px 0px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-epidemio:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -72px -36px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-healthalert:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: 0px -72px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-healthnews:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -36px -72px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-icon-calendar:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: 0px 0px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-numbers:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -108px 0px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-patient:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -108px -36px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-responsive:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -108px -72px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-satisfaction:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: 0px -108px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-simplicity:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -36px -108px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-visibility:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -72px -108px;
+  width: 36px;
+  height: 36px; }
+
+h4.icon-warranty:before {
+  background-image: url(/static/images/sprites/icons_medsite.png);
+  background-position: -108px -108px;
+  width: 36px;
+  height: 36px; }
+
+html a {
+  color: #e84439;
+  outline: none;
+  text-decoration: none; }
+  html a:hover, html a:focus {
+    outline: none;
+    color: #d52519; }
+
+html ul {
+  padding: 0;
+  margin: 0; }
+  html ul li {
+    list-style-type: none; }
+
+html dl dd {
+  margin-left: 0; }
+
+html .button {
+  color: #e84439;
+  border: 2px solid #e84439;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+html body {
+  background: transparent;
+  font-family: "Hind"; }
+  html body main {
+    color: #3e3e3e;
+    margin: 0 auto; }
+    html body main h2 {
+      font-family: "Montserrat";
+      font-weight: 400; }
+    html body main h3 {
+      font-family: "Montserrat";
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+      display: block;
+      max-width: 960px;
+      margin: 0 auto;
+      position: relative;
+      padding: 40px 0;
+      letter-spacing: 2px; }
+      html body main h3:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #e84439;
+        margin: 10px auto; }
+    html body main h4 {
+      font-size: 15px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      text-transform: uppercase; }
+      html body main h4.icon:before {
+        content: '';
+        display: block;
+        position: absolute; }
+    html body main .hidden {
+      display: none; }
+    html body main article {
+      height: 100%; }
+      html body main article > .content {
+        max-width: 960px;
+        margin: 0 auto; }
+    html body main #intro #parallax-intro {
+      background: transparent; }
+      html body main #intro #parallax-intro .sticky-wrapper.is-sticky .sticky-menu {
+        background: #fff;
+        right: 0;
+        left: 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); }
+        html body main #intro #parallax-intro .sticky-wrapper.is-sticky .sticky-menu nav ul li.subscribe {
+          background: #e84439;
+          border: none;
+          font-weight: 600; }
+          html body main #intro #parallax-intro .sticky-wrapper.is-sticky .sticky-menu nav ul li.subscribe a {
+            color: #fff; }
+          html body main #intro #parallax-intro .sticky-wrapper.is-sticky .sticky-menu nav ul li.subscribe:hover {
+            background: #ec675e; }
+      html body main #intro #parallax-intro .sticky-wrapper .sticky-menu {
+        width: 100%;
+        z-index: 100; }
+        html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div {
+          max-width: 960px;
+          margin: 0 auto; }
+          html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div h1 {
+            display: inline-block;
+            margin: 0;
+            top: 5px;
+            position: relative; }
+            html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div h1 a img {
+              width: 130px; }
+            html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div h1:hover {
+              opacity: 0.8;
+              transition: ease-in-out .25s; }
+          html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav {
+            float: right; }
+            html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li {
+              display: inline-block;
+              padding: 2px 10px;
+              margin-top: 10px;
+              font-size: 14px; }
+              html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li a {
+                text-decoration: none;
+                color: #3e3e3e; }
+                html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li a:before {
+                  content: '';
+                  width: 100%;
+                  height: 3px;
+                  display: block;
+                  background-color: #e84439;
+                  opacity: 0;
+                  transform: scale(0);
+                  transition: ease-in-out .25s;
+                  position: relative;
+                  top: -12px; }
+              html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe {
+                border: 1px solid #3e3e3e; }
+                html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe a:before {
+                  content: none; }
+                html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe:hover, html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe:focus {
+                  background-color: #e84439;
+                  border-color: transparent;
+                  transition: ease-in-out .25s; }
+                  html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe:hover a, html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li.subscribe:focus a {
+                    color: #fff; }
+              html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li:hover a:before, html body main #intro #parallax-intro .sticky-wrapper .sticky-menu > div nav ul li:focus a:before {
+                background-color: #e84439;
+                opacity: 1;
+                transform: scale(1); }
+      html body main #intro #parallax-intro div + div {
+        clear: both;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 300px; }
+        html body main #intro #parallax-intro div + div h2 {
+          font-size: 80px;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-family: "Hind";
+          margin: 0 0 -40px;
+          letter-spacing: 3px; }
+        html body main #intro #parallax-intro div + div p {
+          font-size: 20px; }
+        html body main #intro #parallax-intro div + div a {
+          display: inline-block;
+          margin: 20px; }
+      html body main #intro #parallax-intro .learn-more a:after {
+        background: url(images/more-arrow.png) no-repeat;
+        content: '';
+        display: block;
+        height: 12px;
+        margin: 0 auto;
+        width: 30px; }
+    html body main .messages .message {
+      background: #f8f8f8;
+      color: #3e3e3e;
+      font-weight: 400;
+      margin: 2%;
+      padding: 1%;
+      text-align: center; }
+      html body main .messages .message h3 {
+        font-size: 18px; }
+    html body main #white-book article {
+      margin: 70px auto;
+      max-width: 80%; }
+      html body main #white-book article h3 {
+        max-width: initial; }
+        html body main #white-book article h3 span {
+          display: block;
+          text-transform: initial;
+          margin-top: 10px; }
+      html body main #white-book article ul li:before {
+        content: '- '; }
+      html body main #white-book article form {
+        margin-top: 20px;
+        text-align: left; }
+        html body main #white-book article form .pure-g > div {
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          padding: 0 1%; }
+          html body main #white-book article form .pure-g > div label.required:after {
+            content: '*'; }
+          html body main #white-book article form .pure-g > div input {
+            border: 1px solid #c6c6c6;
+            border-radius: 0;
+            box-shadow: none; }
+            html body main #white-book article form .pure-g > div input[type="submit"] {
+              border: none;
+              color: #3e3e3e;
+              font-weight: 400;
+              margin: 20px 0;
+              text-transform: inherit; }
+          html body main #white-book article form .pure-g > div:not(:last-child) {
+            float: left;
+            width: 50%; }
+    html body main #functionnalities .content {
+      display: table; }
+      html body main #functionnalities .content > div {
+        display: table-cell;
+        vertical-align: top; }
+        html body main #functionnalities .content > div.left, html body main #functionnalities .content > div.right {
+          width: 25%; }
+          html body main #functionnalities .content > div.left div, html body main #functionnalities .content > div.right div {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 40px; }
+            html body main #functionnalities .content > div.left div:hover h4, html body main #functionnalities .content > div.left div:focus h4, html body main #functionnalities .content > div.right div:hover h4, html body main #functionnalities .content > div.right div:focus h4 {
+              color: #e84439; }
+            html body main #functionnalities .content > div.left div h4, html body main #functionnalities .content > div.right div h4 {
+              text-transform: none;
+              margin: 0; }
+            html body main #functionnalities .content > div.left div p, html body main #functionnalities .content > div.right div p {
+              margin-top: 0;
+              font-size: 15px;
+              line-height: 22px; }
+          html body main #functionnalities .content > div.left .icon:before, html body main #functionnalities .content > div.right .icon:before {
+            left: 0; }
+        html body main #functionnalities .content > div.left {
+          padding-right: 25px; }
+        html body main #functionnalities .content > div.right {
+          padding-left: 25px; }
+        html body main #functionnalities .content > div.middle {
+          width: 50%;
+          background: url(images/functionnalities-bkgd.png) no-repeat;
+          background-size: contain;
+          position: relative; }
+          html body main #functionnalities .content > div.middle img {
+            position: absolute;
+            top: 20px;
+            width: 480px; }
+    html body main #calendar #parallax-services {
+      min-height: 300px;
+      background: transparent;
+      position: relative; }
+      html body main #calendar #parallax-services h3 {
+        top: 75px;
+        left: 0;
+        right: 0; }
+    html body main #calendar .content {
+      display: table;
+      padding: 60px 0; }
+      html body main #calendar .content img, html body main #calendar .content img + div {
+        display: table-cell;
+        vertical-align: top; }
+      html body main #calendar .content img + div h4 {
+        margin-bottom: 0;
+        position: relative;
+        margin-top: 80px;
+        color: #e84439; }
+        html body main #calendar .content img + div h4:before {
+          top: -40px; }
+      html body main #calendar .content img + div span {
+        font-size: 12px; }
+    html body main #services .content {
+      display: table;
+      max-width: 100%;
+      height: 100%;
+      border-top: 1px solid #f2f2f2;
+      border-bottom: 1px solid #f2f2f2;
+      background: #fdfdfd; }
+      html body main #services .content > div:not(#items) {
+        display: table-cell;
+        height: 100%;
+        width: 33%;
+        background: url(images/services-bkgd.jpg) no-repeat;
+        position: relative; }
+        html body main #services .content > div:not(#items) h3 {
+          position: absolute;
+          top: 40%;
+          left: 0;
+          right: 0;
+          color: #fff; }
+      html body main #services .content #items .item {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        height: 370px;
+        border-left: 1px solid #f2f2f2;
+        padding: 2%;
+        text-align: center;
+        display: table; }
+        html body main #services .content #items .item > div {
+          vertical-align: middle;
+          display: table-cell; }
+        html body main #services .content #items .item:last-child, html body main #services .content #items .item:nth-last-child(2) {
+          border-top: 1px solid #f2f2f2; }
+        html body main #services .content #items .item .service-description div {
+          overflow: hidden;
+          transition: margin 0.5s;
+          transform: rotate3d(1, 0, 0, 90deg);
+          margin-bottom: -100%;
+          opacity: 0; }
+          html body main #services .content #items .item .service-description div ul li img {
+            width: 50px; }
+        html body main #services .content #items .item:hover .service-description div {
+          overflow: visible;
+          transform: rotate3d(1, 0, 0, 0);
+          transition: margin 0.5s, transform 0.5s, opacity 0.5s;
+          margin-bottom: 0;
+          opacity: 1; }
+        html body main #services .content #items .item h4 {
+          position: relative;
+          letter-spacing: 1px; }
+          html body main #services .content #items .item h4:before {
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -65px; }
+          html body main #services .content #items .item h4:after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            content: '';
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #e84439;
+            margin: -35px auto; }
+        html body main #services .content #items .item span {
+          font-size: 12px; }
+    html body main #offers {
+      background: #f8f8f8; }
+      html body main #offers .content div {
+        display: table-cell;
+        padding-right: 5px; }
+        html body main #offers .content div.price {
+          padding-right: 20px;
+          text-align: right; }
+          html body main #offers .content div.price p {
+            font-family: "Montserrat";
+            font-size: 45px;
+            margin: 0 0 10px;
+            color: #e84439; }
+            html body main #offers .content div.price p span {
+              font-size: 33px; }
+          html body main #offers .content div.price > p + p {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #3e3e3e; }
+        html body main #offers .content div.description h2 {
+          font-size: 35px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          color: #e84439; }
+        html body main #offers .content div.description h4 {
+          text-transform: none; }
+        html body main #offers .content div.description ul li strong {
+          color: #e84439; }
+      html body main #offers dl {
+        font-size: 10pt;
+        margin: 80px auto 40px;
+        text-align: center;
+        width: 960px; }
+        html body main #offers dl dt {
+          display: inline;
+          font-weight: 600; }
+          html body main #offers dl dt:after {
+            content: ' : ';
+            display: inline; }
+        html body main #offers dl dd {
+          display: inline;
+          margin-right: 2%; }
+    html body main #theme .screen {
+      display: inline-block;
+      position: relative;
+      height: 430px; }
+      html body main #theme .screen .computer {
+        background: url(images/theme.png) no-repeat;
+        height: 370px;
+        width: 702px;
+        margin-top: 40px; }
+        html body main #theme .screen .computer .slick-list {
+          position: absolute;
+          top: 22px;
+          left: 109px; }
+      html body main #theme .screen .mobile {
+        background: url(images/phone.png) no-repeat;
+        height: 275px;
+        width: 140px;
+        position: relative;
+        top: 50px;
+        left: 520px; }
+        html body main #theme .screen .mobile .slick-list {
+          position: absolute;
+          top: 23px;
+          left: 6px; }
+    html body main #theme .items {
+      float: right;
+      position: relative;
+      bottom: 255px;
+      left: 120px;
+      width: 33%; }
+      html body main #theme .items h4 {
+        position: relative; }
+        html body main #theme .items h4:before {
+          position: absolute;
+          top: -40px; }
+    html body main #history {
+      background: #f7f7f7;
+      clear: both; }
+      html body main #history .content p {
+        text-align: center; }
+      html body main #history .content .slick .slick-slide {
+        padding: 22px;
+        width: 45%; }
+        html body main #history .content .slick .slick-slide p {
+          text-align: left;
+          position: relative; }
+          html body main #history .content .slick .slick-slide p:before {
+            content: " \“ ";
+            position: absolute;
+            font-family: "Montserrat";
+            color: #c6c6c6; }
+          html body main #history .content .slick .slick-slide p:before {
+            font-size: 70px;
+            left: -25px;
+            top: -25px; }
+          html body main #history .content .slick .slick-slide p span {
+            font-size: 55px;
+            position: absolute;
+            font-family: "Montserrat";
+            color: #c6c6c6; }
+      html body main #history .content ul {
+        display: table;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%; }
+        html body main #history .content ul li {
+          display: table-cell;
+          text-transform: uppercase;
+          font-family: "Montserrat";
+          padding: 20px 0; }
+          html body main #history .content ul li div {
+            display: block; }
+          html body main #history .content ul li span {
+            color: #e84439;
+            font-size: 30px; }
+    html body main #contact .map-wrapper, html body main #contact .content {
+      background: #fff;
+      box-sizing: border-box;
+      float: left;
+      width: 50%; }
+    html body main #contact .map-wrapper {
+      height: 870px; }
+    html body main #contact .content {
+      padding-left: 3%; }
+      html body main #contact .content h3 {
+        text-align: left;
+        width: initial; }
+        html body main #contact .content h3:after {
+          margin: 10px 0 0; }
+      html body main #contact .content .society {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0; }
+      html body main #contact .content p + p {
+        margin-top: 0; }
+      html body main #contact .content dl {
+        margin: 30px 0; }
+        html body main #contact .content dl dt {
+          display: inline;
+          font-weight: 600; }
+          html body main #contact .content dl dt:after {
+            content: ' : ';
+            display: inline; }
+        html body main #contact .content dl dd {
+          display: inline; }
+          html body main #contact .content dl dd:after {
+            content: '';
+            display: block; }
+      html body main #contact .content form > * {
+        display: block; }
+      html body main #contact .content form input, html body main #contact .content form textarea {
+        border: 1px solid #c6c6c6;
+        padding: 18px;
+        width: 55%;
+        color: #3e3e3e; }
+      html body main #contact .content form textarea {
+        min-height: 200px;
+        max-width: 55%; }
+      html body main #contact .content form input {
+        border-bottom: none; }
+        html body main #contact .content form input[type="submit"] {
+          background-color: #e84439;
+          border: none;
+          color: #fff;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-top: 15px;
+          width: 150px;
+          font-weight: 600;
+          font-size: 13px; }
+      html body main #contact .content ul {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 40px;
+        padding-top: 20px;
+        width: 60%; }
+        html body main #contact .content ul li {
+          display: inline-block;
+          background-color: #e4e4e4;
+          margin-right: 5px; }
+          html body main #contact .content ul li a {
+            color: transparent;
+            display: block; }
+          html body main #contact .content ul li:hover {
+            background-color: #e84439; }
+    html body main #sites {
+      max-width: 960px;
+      margin: 0 auto; }
+  html body footer {
+    background: #3e3e3e;
+    clear: both; }
+    html body footer ul {
+      margin: 0 auto;
+      padding: 12px;
+      width: 960px; }
+      html body footer ul li {
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        list-style: none; }
+        html body footer ul li:before {
+          content: " - ";
+          display: inline-block; }
+        html body footer ul li:first-child:before {
+          content: none; }
+        html body footer ul li:last-child {
+          margin-left: 56%; }
+          html body footer ul li:last-child:before {
+            content: none; }
+        html body footer ul li a {
+          color: #fff;
+          text-decoration: none; }
+          html body footer ul li a:hover {
+            color: #bfbfbf; }
+
+/*# sourceMappingURL=style.sass.css.map */

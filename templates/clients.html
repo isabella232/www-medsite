@@ -1,0 +1,35 @@
+{% extends '_layout.html' %}
+
+{% block title %}Liste des clients{% if department %} du département {{ department }}{% endif %}{% endblock title %}
+
+{% block body %}
+  <section id="clients">
+    {% if department %}
+      <h2>Clients médecins du département {{ '{:02d}'.format(department) }}</h2>
+      {% if clients %}
+        <ul>
+          {% for client in clients %}
+            <li>
+              <a href="https://{{ client.domain }}.medsite.fr/">
+                {{ client.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>Pas de clients dans ce département.</p>
+      {% endif %}
+    {% else %}
+      <h2>Clients médecins en France par département</h2>
+      <ul>
+        {% for department in (range(1, 96) | list) + (range(971, 977) | list) %}
+          <li>
+            <a href="{{ url_for('clients', department=department) }}">
+              Département {{ '{:02d}'.format(department) }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
+{% endblock body %}

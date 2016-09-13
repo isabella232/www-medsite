@@ -1,0 +1,4 @@
+flask
+libsass
+mandrill
+git+ssh://git@github.com/Kozea/top_model.git

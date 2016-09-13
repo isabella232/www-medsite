@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site internet de médecin − Medsite.fr</title>
+    <link type="image/png" rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='pure.min.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.sass.css') }}" />
+  </head>
+
+  <body id="medsite-layout" data-current="#intro">
+    {% block body %}{% endblock body %}
+
+    <footer>
+      <ul>
+        <li>
+          <a title="Informations légales" href="{{ url_for('page', page='legal') }}">Mentions légales</a>
+        </li>
+        <li>
+          <a title="HTML valide" href="http://validator.w3.org/check?uri=referer">HTML</a>
+        </li>
+        <li>
+          <a title="Bon de commande pour un site internet" href="{{ url_for('static', filename='documents/BDC-medsite.pdf') }}">
+            Bon de commande
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('clients') }}">Nos clients</a>
+        </li>
+        <li><span class="copyright">©</span> <a href="http://www.kozea.fr/">Kozea</a> 2008 - 2016</li>
+      </ul>
+    </footer>
+
+    <div>
+      <div class="marker sm" data-size="sm"></div>
+      <div class="marker md" data-size="md"></div>
+      <div class="marker lg" data-size="lg"></div>
+      <div class="marker xl" data-size="xl"></div>
+      <div class="marker xxl" data-size="xxl"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/www_medsite_deps.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/hydra_star.js') }}" crossorigin></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-62616971-2']);
+      _gaq.push(['_setDomainName', 'medsite.fr']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

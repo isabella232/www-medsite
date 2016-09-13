@@ -1,0 +1,416 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+  <main>
+    <article id="intro">
+      <div id="parallax-intro" data-img="{{ url_for('static', filename='images/bkgd.jpg') }}">
+        <div class="sticky-menu">
+          <div>
+            <h1><a href="/home/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo medsite" /></a></h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#intro">Accueil</a>
+                </li>
+                <li>
+                  <a href="#functionnalities">Fonctionnalités</a>
+                </li>
+                <li>
+                  <a href="#calendar">Rendez-vous</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#offers">Offres</a>
+                </li>
+                <li>
+                  <a href="#theme">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#history">À propos</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li class="subscribe">
+                  <a class="track-ga" data-title-ga="BDC Medsite" href="{{ url_for('static', filename='documents/BDC-medsite.pdf') }}">Inscription</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div>
+          <h2>Vous êtes médecin ?</h2>
+          <p>Vous souhaitez un site internet qui valorise votre cabinet ? Vous voulez simplifier la gestion de vos rendez-vous ?</p>
+          <a class="button" href="https://www.youtube.com/embed/udqLKoFZQUw">Voir la vidéo de présentation</a>
+          <a class="button" href="/white_book">Télécharger le livre blanc</a>
+        </div>
+        <div class="learn-more">
+          <a href="#functionnalities">En savoir plus</a>
+        </div>
+      </div>
+    </article>
+
+    <article id="functionnalities">
+      <h3>Présentation de nos sites internet</h3>
+      <div class="content">
+        <div class="left">
+          <div data-name="description" data-src="{{ url_for('static', filename='images/functionnalities/description.jpg') }}">
+            <h4 class="icon icon-description">Description du cabinet</h4>
+            <p>Présentez votre équipe, les coordonnées, les horaires, et le plan d’accès de votre cabinet.</p>
+          </div>
+          <div data-name="agenda" data-src="{{ url_for('static', filename='images/functionnalities/agenda.jpg') }}">
+            <h4 class="icon icon-agenda">Agenda en ligne</h4>
+            <p>Gérez vos rendez-vous en ligne.</p>
+          </div>
+          <div data-name="healthnews" data-src="{{ url_for('static', filename='images/functionnalities/healthnews.jpg') }}">
+            <h4 class="icon icon-healthnews">Actualité santé</h4>
+            <p>Un flux RSS relaye les articles du Ministère des Affaires Sociales, de la Santé et du Droit des Femmes.</p>
+          </div>
+          <div data-name="calendar" data-src="{{ url_for('static', filename='images/functionnalities/calendar.jpg') }}">
+            <h4 class="icon icon-calendar">Calendrier santé</h4>
+            <p>Présentez le calendrier vaccinal et polinique.</p>
+          </div>
+        </div>
+        <div class="middle">
+          <img data-current="description" src="{{ url_for('static', filename='images/functionnalities/description.jpg') }}" alt="description" />
+        </div>
+        <div class="right">
+          <div data-name="degree" data-src="{{ url_for('static', filename='images/functionnalities/degree.jpg') }}">
+            <h4 class="icon icon-degree">Titres et travaux</h4>
+            <p>Renseignez les gestes que vous pratiquez,vos articles médicaux et vos diplômes.</p>
+          </div>
+          <div data-name="healthalert" data-src="{{ url_for('static', filename='images/functionnalities/healthalert.jpg') }}">
+            <h4 class="icon icon-healthalert">Alertes sanitaires</h4>
+            <p>Accèdez aux alertes sanitaires en cours.</p>
+          </div>
+          <div data-name="epidemio" data-src="{{ url_for('static', filename='images/functionnalities/epidemio.jpg') }}">
+            <h4 class="icon icon-epidemio">Épidémiologie</h4>
+            <p>Informez sur l’évolution des maladies épidémiques.</p>
+          </div>
+          <div data-name="numbers" data-src="{{ url_for('static', filename='images/functionnalities/numbers.jpg') }}">
+            <h4 class="icon icon-numbers">Numéros utiles</h4>
+            <p>Affichez les médecins de garde et les numéros d'urgences.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="calendar">
+      <div id="parallax-services" data-img="{{ url_for('static', filename='images/crop.jpg') }}">
+        <h3>plus rapide et plus pratique, la prise de rendez-vous n'est plus une contrainte.</h3>
+      </div>
+      <div class="content">
+        <img data-sr="enter left, move 100px, wait 0.2s" src="{{ url_for('static', filename='images/calendar.png') }}" alt="calendar" />
+        <div data-sr="enter right, move 100px, wait 0.2s">
+          <div>
+            <h4 class="icon icon-doctor">Par le secrétariat ou le médecin</h4>
+            <ul>
+              <li>Prise en main facile et rapide</li>
+              <li>SMS de confirmation de RDV automatique</li>
+              <li>SMS de retard ou d'annulation par le médecin</li>
+              <li>Optimisation des RDV honorés</li>
+              <li>Pour ne plus perdre un appel !</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="icon icon-patient">Par les patients*</h4>
+            <ul>
+              <li>RDV à confirmer par le médecin</li>
+              <li>Accessible 24h/24</li>
+              <li>Sérénité et satisfaction</li>
+              <li>Service gratuit</li>
+            </ul>
+            <span>*Cette option est désactivable</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="services">
+      <div class="content">
+        <div>
+          <h3>Services</h3>
+        </div>
+        <div id="items">
+          <div class="item visibility">
+            <div>
+              <div class="service-description">
+                <h4  class="icon icon-visibility">Visibilité</h4>
+                <div>
+                  <ul>
+                    <li>Une présence indispensable sur le Web</li>
+                    <li>La présentation de votre cabinet est accessible 24h/24</li>
+                    <li>Un référencement naturel optimal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item simplicity">
+            <div>
+              <div class="service-description">
+                <h4 class="icon icon-simplicity">Simplicité</h4>
+                <div>
+                  <ul>
+                    <li>Les sites Internet Medsite.fr sont faciles d'utilisation et accessibles à tous.</li>
+                    <li>C'est aussi simple que d'envoyer un mail avec une pièce jointe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item warranty">
+            <div>
+              <div class="service-description">
+                <h4 class="icon icon-warranty">Garantie</h4>
+                <div>
+                  <ul>
+                    <li>Vos données sont hébergées entre le patient et le médecin par un Hébergeur de données de santé (Grita)</li>
+                    <li>Medsite.fr s’engage à appliquer la Charte de conformité de déontologie médicale applicable aux sites web professionnels des médecins</li>
+                    <li><img src="{{ url_for('static', filename='images/cnom.jpg') }}" alt="CNOM"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item satisfaction">
+            <div>
+              <div class="service-description">
+                <h4 class="icon icon-satisfaction">Satisfaction</h4>
+                <div>
+                  <ul>
+                    <li>La prise de rendez-vous et le rappel par SMS sont gratuits pour le patient.</li>
+                    <li>90% des patients considèrent que la prise d'un rendez-vous en ligne leur permettrait de gagner du temps*</li>
+                  </ul>
+                  <span>* Méthodologie : Étude réalisée en ligne du 1 au 31 décembre 2014 sur un panel constitué d’un échantillon de 100 individus, représentatif de la population française âgées de 18 ans et plus.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="offers">
+      <h3>Des offres accessibles et performantes</h3>
+      <div class="content">
+        <div>
+          <div class="price">
+            <p>10<sup>€</sup><span>HT/mois</span></p>
+            <p>soit 12€ TTC/mois</p>
+          </div>
+          <div class="description">
+            <h2>Ecoweb</h2>
+            <ul>
+              <li>présentation optimale de votre cabinet</li>
+              <li>horaires de consultation</li>
+              <li>équipe</li>
+              <li>plan d'accès</li>
+            </ul>
+            <h4>Informations médicales</h4>
+            <ul>
+              <li>actualité santé<sup>(1)</sup></li>
+              <li>actualité du cabinet</li>
+              <li>alertes sanitaires</li>
+              <li>épidémiologie<sup>(2)</sup></li>
+            </ul>
+            <h4>Services</h4>
+            <ul>
+              <li>médecins de gardes</li>
+              <li>carnet de vaccination</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="price">
+            <p>40<sup>€</sup><span>HT/mois</span></p>
+            <p>soit 48€ TTC/mois</p>
+          </div>
+          <div class="description">
+            <h2>Flexiweb</h2>
+            <ul>
+              <li>présentation optimale de votre cabinet</li>
+              <li>horaires de consultation</li>
+              <li>équipe</li>
+              <li>plan d'accès</li>
+            </ul>
+            <h4>Informations médicales</h4>
+            <ul>
+              <li>actualité santé<sup>(1)</sup></li>
+              <li>actualité du cabinet</li>
+              <li>alertes sanitaires</li>
+              <li>épidémiologie<sup>(2)</sup></li>
+            </ul>
+            <h4>Services</h4>
+            <ul>
+              <li>médecins de gardes</li>
+              <li>carnet de vaccination</li>
+              <li><strong>agenda en ligne</strong></li>
+              <li><strong>rappel par sms<sup>(3)</sup></strong></li>
+            </ul>
+          </div>
+        </div>
+        <dl>
+          <dt>1</dt>
+          <dd>informations de www.santegouv.fr</dd>
+          <dt>2</dt>
+          <dd>Surveillance du réseau sentinelle</dd>
+          <dt>3</dt>
+          <dd>0,08€ TTC/sms</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article id="theme">
+      <h3>Un large choix de thèmes graphiques</h3>
+      <div class="content">
+        <div class="screen">
+          <div class="computer">
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/general.jpg') }}" alt="Thème general"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/medical.jpg') }}" alt="Thème medical"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/podo.jpg') }}" alt="Thème podo"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/simple.jpg') }}" alt="Thème simple"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/medecin.jpg') }}" alt="Thème medecin"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/molecule.jpg') }}" alt="Thème molecule"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/rendezvous.jpg') }}" alt="Thème rendezvous"/>
+            </div>
+          </div>
+          <div class="mobile scrollme animateme" data-when="enter" data-from="0" data-to="0.2" data-translatey="-320" data-opacity="1">
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-general') }}.jpg" alt="Thème portable general"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-medical') }}.jpg" alt="Thème portable medical"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-podo') }}.jpg" alt="Thème portable podo"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-simple') }}.jpg" alt="Thème portable simple"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-medecin') }}.jpg" alt="Thème portable medecin"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-molecule') }}.jpg" alt="Thème portable molecule"/>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/themes/sm-rendezvous') }}.jpg" alt="Thème portable rendezvous"/>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div>
+            <h4 class="icon icon-responsive">Des sites optimisés pour mobile</h4>
+            <p>Chaque site s'adapte au format tablette et smartphone.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="history">
+      <h3>Medsite.fr, leader français des sites pour les professionnels de santé</h3>
+      <div class="content">
+        <p>Créée en 2013, Medsite.fr est une marque développée par la société Kozea.</p>
+        <p>Acteur majeur auprès des professionnels de santé, Kozea est le leader des sites internet pour les pharmaciens d'officine.</p>
+        <p>L'expérience et les compétences acquises auprès des pharmaciens nous a permis de développer des sites de qualité pour les médecins.</p>
+        <p>Entreprise jeune et dynamique, Kozea est en recherche permanente de nouveaux challenges !</p>
+        <p>Vous trouverez plus de renseignements sur <a href="http://www.kozea.fr">www.kozea.fr</a></p>
+        <h3>Ils parlent de nous</h3>
+        <div class="slick comments">
+          <div>
+            <p>La fonctionnalité de prise de RDV est très pratique et tellement simple d’utilisation !<span>”</span></p>
+            <dl>
+              <dt>Sylvie Mathon</dt>
+              <dd>Secrétaire Médicale - Clinique Natécia</dd>
+            </dl>
+          </div>
+          <div>
+            <p>Le service de SMS est génial.<span>”</span></p>
+            <dl>
+              <dt>Sylvie Porot</dt>
+              <dd>Secrétaire Médicale - Clinique Natécia</dd>
+            </dl>
+          </div>
+          <div>
+            <p>Nous ne reviendrons pas à nos agendas papier, c’est certain !<span>”</span></p>
+            <dl>
+              <dt>Sylvie Porot</dt>
+              <dd>Secrétaire Médicale - Clinique Natécia</dd>
+            </dl>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div>
+              <span class="counter" data-max="1" data-interval="100">0</span>
+            </div>
+            hotline à votre service
+          </li>
+          <li>
+            <div>
+              <span class="counter" data-max="10" data-interval="150">0</span>
+            </div>
+            minutes de prise en main
+          </li>
+          <li>
+            <div>
+              <span class="counter" data-max="100" data-interval="15">0</span><span>%</span>
+            </div>
+            clients satisfaits
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article id="contact">
+      <div class="map-wrapper" data-conf="MedsiteMap" data-load="{{ url_for('static', filename='js/map_style.js') }}"></div>
+      <div class="content">
+        <h3>Contactez-nous</h3>
+        <p class="society">Medsite.fr - Kozea</p>
+        <p>
+          107 Boulevard de Stalingrad<br/>
+          69100 Villeurbanne<br/>
+        </p>
+        <dl>
+          <dt>Tél</dt>
+          <dd>04 27 11 83 95</dd>
+          <dt>Fax</dt>
+          <dd>04 27 11 83 98</dd>
+          <dt>Email</dt>
+          <dd>contact@medsite.fr</dd>
+        </dl>
+        <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+          <input id="mail" name="mail" placeholder="Votre adresse email" required/>
+          <textarea id="comment" name="comment" required></textarea>
+          <input type="submit" id="submit" value="Envoyer" />
+        </form>
+        <ul>
+          <li class="social icon-social_fb">
+            <a href="https://www.facebook.com/pages/Medsite/539297156211272">Facebook</a>
+          </li>
+          <li class="social icon-social_twitter">
+            <a href="https://twitter.com/medsitefr">Twitter</a>
+          </li>
+          <li class="social icon-social_linkedin">
+            <a href="https://www.linkedin.com/company/medsite-fr?trk=biz-brand-tree-co-name">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+{% endblock body %}

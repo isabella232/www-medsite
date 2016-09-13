@@ -1,0 +1,719 @@
+@import "colors"
+@import "social"
+@import "icons"
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+@import url(https://fonts.googleapis.com/css?family=Hind:300,600)
+
+html
+  a
+    color: $a
+    outline: none
+    text-decoration: none
+
+    &:hover, &:focus
+      outline: none
+      color: $a_hover
+
+  ul
+    padding: 0
+    margin: 0
+
+    li
+      list-style-type: none
+
+  dl dd
+    margin-left: 0
+
+  .button
+    color: $a
+    border: 2px solid $a
+    padding: 8px 15px
+    text-transform: uppercase
+    font-weight: 600
+
+  body
+
+    background: transparent
+    font-family: "Hind"
+
+    main
+      color: $text
+      margin: 0 auto
+
+      h2
+        font-family: "Montserrat"
+        font-weight: 400
+
+      h3
+        font-family: "Montserrat"
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 30px
+        text-align: center
+        display: block
+        max-width: 960px
+        margin: 0 auto
+        position: relative
+        padding: 40px 0
+        letter-spacing: 2px
+
+        &:after
+          position: absolute
+          left: 0
+          right: 0
+          content: ''
+          display: block
+          width: 30px
+          height: 3px
+          background-color: $primary
+          margin: 10px auto
+
+      h4
+        font-size: 15px
+        font-family: "Montserrat"
+        font-weight: 400
+        text-transform: uppercase
+
+        &.icon:before
+          content: ''
+          display: block
+          position: absolute
+
+      .hidden
+        display: none
+
+      article
+        height: 100%
+
+        > .content
+          max-width: 960px
+          margin: 0 auto
+
+      #intro
+        #parallax-intro
+          background: transparent
+
+          .sticky-wrapper
+            &.is-sticky
+              .sticky-menu
+                background: $nav_bkgd
+                right: 0
+                left: 0
+                box-shadow: 0 -2px 5px rgba(0,0,0, 0.3)
+
+                nav
+                  ul li
+                    &.subscribe
+                      background: $button
+                      border: none
+                      font-weight: 600
+
+                      a
+                        color: #fff
+
+                      &:hover
+                        background: lighten($button, 8%)
+
+            .sticky-menu
+              width: 100%
+              z-index: 100
+
+              > div
+                max-width: 960px
+                margin: 0 auto
+
+                h1
+                  display: inline-block
+                  margin: 0
+                  top: 5px
+                  position: relative
+
+                  a img
+                    width: 130px
+
+                  &:hover
+                    opacity: 0.8
+                    transition: ease-in-out .25s
+
+                nav
+                  float: right
+
+                  ul
+                    li
+                      display: inline-block
+                      padding: 2px 10px
+                      margin-top: 10px
+                      font-size: 14px
+
+                      a
+                        text-decoration: none
+                        color: $text
+
+                        &:before
+                          content: ''
+                          width: 100%
+                          height: 3px
+                          display: block
+                          background-color: $a
+                          opacity: 0
+                          transform: scale(0)
+                          transition: ease-in-out .25s
+                          position: relative
+                          top: -12px
+
+                      &.subscribe
+                        border: 1px solid $text
+
+                        a:before
+                          content: none
+
+                        &:hover, &:focus
+                          background-color: $a
+                          border-color: transparent
+                          transition: ease-in-out .25s
+
+                          a
+                            color: #fff
+
+                      &:hover, &:focus
+                        a:before
+                          background-color: $a
+                          opacity: 1
+                          transform: scale(1)
+
+          div + div
+            clear: both
+            max-width: 960px
+            margin: 0 auto
+            text-align: center
+            padding-top: 300px
+
+            h2
+              font-size: 80px
+              text-transform: uppercase
+              font-weight: 300
+              font-family: "Hind"
+              margin: 0 0 -40px
+              letter-spacing: 3px
+
+            p
+              font-size: 20px
+
+            a
+              display: inline-block
+              margin: 20px
+
+          .learn-more a:after
+            background: url(images/more-arrow.png)no-repeat
+            content: ''
+            display: block
+            height: 12px
+            margin: 0 auto
+            width: 30px
+
+      .messages
+        .message
+          background: $bkgd
+          color: $text
+          font-weight: 400
+          margin: 2%
+          padding: 1%
+          text-align: center
+
+          h3
+            font-size: 18px
+
+      #white-book
+        article
+          margin: 70px auto
+          max-width: 80%
+
+          h3
+            max-width: initial
+
+            span
+              display: block
+              text-transform: initial
+              margin-top: 10px
+
+          ul li:before
+            content: '- '
+
+          form
+            margin-top: 20px
+            text-align: left
+
+            .pure-g > div
+              box-sizing: border-box
+              margin-bottom: 10px
+              padding: 0 1%
+
+              label.required:after
+                content: '*'
+
+              input
+                border: 1px solid $form_border
+                border-radius: 0
+                box-shadow: none
+
+                &[type="submit"]
+                  border: none
+                  color: $text
+                  font-weight: 400
+                  margin: 20px 0
+                  text-transform: inherit
+
+              &:not(:last-child)
+                float: left
+                width: 50%
+
+      #functionnalities
+        .content
+          display: table
+
+          > div
+            display: table-cell
+            vertical-align: top
+
+            &.left, &.right
+              width: 25%
+
+              div
+                position: relative
+                padding-left: 40px
+                margin-bottom: 40px
+
+                &:hover, &:focus
+                  h4
+                    color: $a
+
+                h4
+                  text-transform: none
+                  margin: 0
+
+                p
+                  margin-top: 0
+                  font-size: 15px
+                  line-height: 22px
+
+              .icon:before
+                left: 0
+
+            &.left
+              padding-right: 25px
+
+            &.right
+              padding-left: 25px
+
+            &.middle
+              width: 50%
+              background: url(images/functionnalities-bkgd.png)no-repeat
+              background-size: contain
+              position: relative
+
+              img
+                position: absolute
+                top: 20px
+                width: 480px
+
+      #calendar
+        #parallax-services
+          min-height: 300px
+          background: transparent
+          position: relative
+
+          h3
+              top: 75px
+              left: 0
+              right: 0
+
+        .content
+          display: table
+          padding: 60px 0
+
+          img,  img + div
+            display: table-cell
+            vertical-align: top
+
+          img + div
+            h4
+              margin-bottom: 0
+              position: relative
+              margin-top: 80px
+              color: $primary
+
+              &:before
+                top: -40px
+
+            span
+              font-size: 12px
+
+      #services
+        .content
+          display: table
+          max-width: 100%
+          height: 100%
+          border-top: 1px solid $border
+          border-bottom: 1px solid $border
+          background: lighten($bkgd, 2%)
+
+          >div:not(#items)
+            display: table-cell
+            height: 100%
+            width: 33%
+            background: url(images/services-bkgd.jpg)no-repeat
+            position: relative
+
+            h3
+              position: absolute
+              top: 40%
+              left: 0
+              right: 0
+              color: #fff
+
+          #items
+            .item
+              float: left
+              width: 50%
+              box-sizing: border-box
+              height: 370px
+              border-left: 1px solid #f2f2f2
+              padding: 2%
+              text-align: center
+              display: table
+
+              > div
+                vertical-align: middle
+                display: table-cell
+
+              &:last-child, &:nth-last-child(2)
+                border-top: 1px solid #f2f2f2
+
+              .service-description div
+                overflow: hidden
+                transition: margin 0.5s
+                transform: rotate3d(1, 0, 0, 90deg)
+                margin-bottom: -100%
+                opacity: 0
+
+                ul li img
+                  width: 50px
+
+              &:hover
+                .service-description div
+                  overflow: visible
+                  transform: rotate3d(1, 0, 0, 0)
+                  transition: margin 0.5s, transform 0.5s, opacity 0.5s
+                  margin-bottom: 0
+                  opacity: 1
+
+              h4
+                position: relative
+                letter-spacing: 1px
+
+                &:before
+                  left: 0
+                  right: 0
+                  margin: auto
+                  top: -65px
+
+                &:after
+                  position: absolute
+                  left: 0
+                  right: 0
+                  content: ''
+                  display: block
+                  width: 30px
+                  height: 3px
+                  background-color: $primary
+                  margin: -35px auto
+
+              span
+                font-size: 12px
+
+      #offers
+        background: $bkgd
+
+        .content
+          div
+            display: table-cell
+            padding-right: 5px
+
+            &.price
+              padding-right: 20px
+              text-align: right
+
+              p
+                font-family: "Montserrat"
+                font-size: 45px
+                margin: 0 0 10px
+                color: $primary
+
+                span
+                  font-size: 33px
+
+              > p + p
+                font-size: 15px
+                text-transform: uppercase
+                color: $text
+
+            &.description
+              h2
+                font-size: 35px
+                margin-bottom: 10px
+                text-transform: uppercase
+                color: $primary
+
+              h4
+                text-transform: none
+
+              ul li strong
+                color: $primary
+
+        dl
+          font-size: 10pt
+          margin: 80px auto 40px
+          text-align: center
+          width: 960px
+
+          dt
+            display: inline
+            font-weight: 600
+
+            &:after
+              content: ' : '
+              display: inline
+
+          dd
+            display: inline
+            margin-right: 2%
+
+      #theme
+        .screen
+          display: inline-block
+          position: relative
+          height: 430px
+
+          .computer
+            background: url(images/theme.png) no-repeat
+            height: 370px
+            width: 702px
+            margin-top: 40px
+
+            .slick-list
+              position: absolute
+              top: 22px
+              left: 109px
+
+          .mobile
+            background: url(images/phone.png) no-repeat
+            height: 275px
+            width: 140px
+            position: relative
+            top: 50px
+            left: 520px
+
+            .slick-list
+              position: absolute
+              top: 23px
+              left: 6px
+
+        .items
+          float: right
+          position: relative
+          bottom: 255px
+          left: 120px
+          width: 33%
+
+          h4
+            position: relative
+
+            &:before
+              position: absolute
+              top: -40px
+
+      #history
+        background: #f7f7f7
+        clear: both
+
+        .content
+          p
+            text-align: center
+
+          .slick
+            .slick-slide
+              padding: 22px
+              width: 45%
+
+              p
+                text-align: left
+                position: relative
+
+                &:before
+                  content: " \“ "
+                  position: absolute
+                  font-family: "Montserrat"
+                  color: $form_border
+
+                &:before
+                  font-size: 70px
+                  left: -25px
+                  top: -25px
+
+                span
+                  font-size: 55px
+                  position: absolute
+                  font-family: "Montserrat"
+                  color: $form_border
+
+          ul
+            display: table
+            text-align: center
+            text-transform: uppercase
+            width: 100%
+
+            li
+              display: table-cell
+              text-transform: uppercase
+              font-family: "Montserrat"
+              padding: 20px 0
+
+              div
+                display: block
+
+              span
+                color: $primary
+                font-size: 30px
+
+      #contact
+        .map-wrapper, .content
+          background: #fff
+          box-sizing: border-box
+          float: left
+          width: 50%
+
+        .map-wrapper
+          height: 870px
+
+        .content
+          padding-left: 3%
+
+          h3
+            text-align: left
+            width: initial
+
+            &:after
+              margin: 10px 0 0
+
+          .society
+            text-transform: uppercase
+            font-weight: 600
+            margin-bottom: 0
+
+          p + p
+            margin-top: 0
+
+          dl
+            margin: 30px 0
+
+            dt
+              display: inline
+              font-weight: 600
+
+              &:after
+                content: ' : '
+                display: inline
+
+            dd
+              display: inline
+
+              &:after
+                content: ''
+                display: block
+
+          form
+            > *
+              display: block
+
+            input, textarea
+              border: 1px solid $form_border
+              padding: 18px
+              width: 55%
+              color: $text
+
+            textarea
+              min-height: 200px
+              max-width: 55%
+
+            input
+              border-bottom: none
+
+              &[type="submit"]
+                background-color: $primary
+                border: none
+                color: #fff
+                text-transform: uppercase
+                display: inline-block
+                margin-top: 15px
+                width: 150px
+                font-weight: 600
+                font-size: 13px
+
+          ul
+            border-top: 1px solid lighten($form_border, 10%)
+            margin-top: 40px
+            padding-top: 20px
+            width: 60%
+
+            li
+              display: inline-block
+              background-color: darken($bkgd, 8%)
+              margin-right: 5px
+
+              a
+                color: transparent
+                display: block
+
+              &:hover
+                background-color: $button
+
+      #sites
+        max-width: 960px
+        margin: 0 auto
+
+    footer
+      background: $footer_bkgd
+      clear: both
+
+      ul
+        margin: 0 auto
+        padding: 12px
+        width: 960px
+
+        li
+          color: $footer
+          display: inline-block
+          font-size: 12px
+          list-style: none
+
+          &:before
+            content: " - "
+            display: inline-block
+
+          &:first-child
+            &:before
+              content: none
+
+          &:last-child
+            margin-left: 56%
+
+            &:before
+              content: none
+
+          a
+            color: $footer
+            text-decoration: none
+
+            &:hover
+              color: darken($footer, 25%)
