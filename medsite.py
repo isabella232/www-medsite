@@ -11,7 +11,7 @@ app.config.from_envvar('WWW_MEDSITE_CONFIG', silent=True)
 
 
 @app.route('/')
-@app.route('/<page>')
+@app.route('/<page>/')
 def page(page='index'):
     try:
         return render_template('{}.html'.format(page), page=page)
@@ -19,19 +19,19 @@ def page(page='index'):
         abort(404)
 
 
-@app.route('/clients')
-@app.route('/clients/<int:department>')
+@app.route('/clients/')
+@app.route('/clients/<int:department>/')
 def clients(department=None):
     return render_template('clients.html', page='news', department=department)
 
 
-@app.route('/contact', methods=['POST'])
+@app.route('/contact/', methods=['POST'])
 def contact():
     message = {
         'to': [{'email': 'contact@medsite.fr'}],
         'from_email': 'contact@medsite.fr',
         'subject': 'Message de www.medsite.fr',
-        'html': 'Contact : {}\nMessage :{}'.format(
+        'html': 'Contact : {}\nMessage : {}'.format(
             request.form['mail'], request.form['comment'])}
     if not current_app.debug:
         mandrill_client = Mandrill(app.config.get('MANDRILL_KEY'))
