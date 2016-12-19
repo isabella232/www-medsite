@@ -1,0 +1,63 @@
+$sm: 35.5em
+$md: 48em
+$lg: 64em
+$xl: 80em
+$e: 0.001em
+
+@mixin media-query($media-query)
+  @if $media-query == sm
+    @media only screen and (max-width:($sm - $e))
+      @content
+
+  @if $media-query == md
+    @media only screen and (min-width:$sm) and (max-width:($md - $e))
+      @content
+
+  @if $media-query == lg
+    @media only screen and (min-width:$md) and (max-width:($lg - $e))
+      @content
+
+  @if $media-query == xl
+    @media only screen and (min-width:$lg) and (max-width:($xl - $e))
+      @content
+
+
+  @if $media-query == above-sm
+    @media only screen and (min-width:$sm)
+      @content
+
+  @if $media-query == above-md
+    @media only screen and (min-width:$md)
+      @content
+
+  @if $media-query == above-lg
+    @media only screen and (min-width:$lg)
+      @content
+
+  @if $media-query == above-xl
+    @media only screen and (min-width:$xl)
+      @content
+
+
+  @if $media-query == below-md
+    @media only screen and (max-width:($md - $e))
+      @content
+
+  @if $media-query == below-lg
+    @media only screen and (max-width:($lg - $e))
+      @content
+
+  @if $media-query == below-xl
+    @media only screen and (max-width:($xl - $e))
+      @content
+
+
+$sizes: (sm, md, lg, xl, xxl)
+
+.marker
+  display: none
+
+@each $size in $sizes
+  @include media-query($size)
+    .marker.#{$size}
+      display: block

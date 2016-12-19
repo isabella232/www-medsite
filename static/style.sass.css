@@ -125,6 +125,25 @@ h4.icon-warranty:before {
   width: 36px;
   height: 36px; }
 
+.marker {
+  display: none; }
+
+@media only screen and (max-width: 35.499em) {
+  .marker.sm {
+    display: block; } }
+
+@media only screen and (min-width: 35.5em) and (max-width: 47.999em) {
+  .marker.md {
+    display: block; } }
+
+@media only screen and (min-width: 48em) and (max-width: 63.999em) {
+  .marker.lg {
+    display: block; } }
+
+@media only screen and (min-width: 64em) and (max-width: 79.999em) {
+  .marker.xl {
+    display: block; } }
+
 html a {
   color: #e84439;
   outline: none;
