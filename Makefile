@@ -21,11 +21,10 @@ clean-install: clean
 	rm -fr *.egg-info
 
 lint:
-	$(PYTEST) --no-cov --flake8 -m flake8 $(PROJECT_NAME) tests
-	$(PYTEST) --no-cov --isort -m isort $(PROJECT_NAME) tests
+	$(PYTEST) --no-cov --flake8 -m flake8
+	$(PYTEST) --no-cov --isort -m isort
 
-check-python:
-	$(PYTEST) tests
+check-python: lint
 
 check-outdated:
 	$(PIP) list --outdated --format=columns
@@ -38,6 +37,6 @@ env:
 	$(RUN)
 
 run:
-	$(VENV)/bin/medsite.py
+	$(VENV)/bin/$(PROJECT_NAME).py
 
 serve: run
