@@ -29,7 +29,7 @@ def clients(department=None):
         Client.query.join(ClientType).
         filter(
             (ClientType.domain == 'medsite') &
-            (Client.current_contract != None) &
+            (Client.current_contract != None) & # noqa
             (Client.domain != None)))
     if department:
         clients = clients.filter(Client.zip.like('%s%%' % department))
